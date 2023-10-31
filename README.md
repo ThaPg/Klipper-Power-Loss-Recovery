@@ -42,13 +42,13 @@ filename: ~/save_variables.cfg # needed for Power Loss Recovery plr.cfg
 
 # 5. CURA Slicer
 
-α. Προσθήκη στην τελευταία σειρά του start gcode: *save_last_file*
-β. Προσθήκη στην πρώτη σειρά του end gcode: *clear_last_file*
-γ. Σε κάθε αλλαγή επιπέδου: *LOG_Z*
+1. Προσθήκη στην τελευταία σειρά του start gcode: *save_last_file*
+2. Προσθήκη στην πρώτη σειρά του end gcode: *clear_last_file*
+3. Σε κάθε αλλαγή επιπέδου: *LOG_Z*
 
-a. Add to last line of start gcode: *save_last_file*
-b. Add to first line of end gcode: *clear_last_file*
-c. On every level change: *LOG_Z*
+1. Add to last line of start gcode: *save_last_file*
+2. Add to first line of end gcode: *clear_last_file*
+3. On every level change: *LOG_Z*
 
 **Ο παραγομενος κώδικας .gcode πρέπει να εχει όσο το δυνατόν λιτότερα Post Processing Scripts.**
 
