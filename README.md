@@ -7,6 +7,10 @@ Based on [https://github.com/Travis90x/plr-klipper](https://github.com/Travis90x
 Χρήση / Usage:
 <https://www.youtube.com/watch?v=XvJMC4jv4xA&ab_channel=Travis90x>
 
+Και τα δυο αρχεία ([prl.cfg](prl.cfg) και [prl.sh](prl.sh)) είναι του Travis90x και έχουν τροποποιηθεί μόνο τα μονοπάτια.
+
+Both files ([prl.cfg](prl.cfg) and [prl.sh](prl.sh)) are from Travis90x and only the paths have been modified.
+
 # 1. Εγκατάσταση / Installation
 
 Απαιτείται να γίνει εγκατάσταση της επέκτασης **gcode_shell_command.py** στον φάκελο *klipper/klippy/extras*. 
@@ -39,19 +43,21 @@ filename: ~/save_variables.cfg # needed for Power Loss Recovery plr.cfg
 
 # 4. plr.cfg / save_variables.cfg
 ![Power Loss Recovery plr.cfg position](prl.cfg__and__save_variables.PNG)
-![Variables](save_variables.PNG)
 
+![Variables](save_variables.PNG)
 # 5. CURA Slicer
 
-1. Προσθήκη στην τελευταία σειρά του start gcode: *save_last_file*
-2. Προσθήκη στην πρώτη σειρά του end gcode: *clear_last_file*
+### Ενδίκνυεται χρήση μόνο του CURA slicer για λόγους συμβατότητας.
+1. Προσθήκη στην τελευταία γραμμή του start gcode: *save_last_file*
+2. Προσθήκη στην πρώτη γραμμή του end gcode: *clear_last_file*
 3. Σε κάθε αλλαγή επιπέδου: *LOG_Z*
 
-* Add to last line of start gcode: *save_last_file*
-* Add to first line of end gcode: *clear_last_file*
-* On every level change: *LOG_Z*
-
 **Ο παραγομενος κώδικας .gcode πρέπει να εχει όσο το δυνατόν λιτότερα Post Processing Scripts.**
+
+### It is recommended to use only the CURA slicer for compatibility reasons.
+1. Add to last line of start gcode: *save_last_file*
+2. Add to first line of end gcode: *clear_last_file*
+3. On every level change: *LOG_Z*
 
 **Generated .gcode should have as few Post Processing Scripts as possible.**
 
