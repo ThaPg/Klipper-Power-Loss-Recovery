@@ -46,9 +46,9 @@ filename: ~/save_variables.cfg # needed for Power Loss Recovery plr.cfg
 2. Προσθήκη στην πρώτη σειρά του end gcode: *clear_last_file*
 3. Σε κάθε αλλαγή επιπέδου: *LOG_Z*
 
-*. Add to last line of start gcode: *save_last_file*
-*. Add to first line of end gcode: *clear_last_file*
-*. On every level change: *LOG_Z*
+* Add to last line of start gcode: *save_last_file*
+* Add to first line of end gcode: *clear_last_file*
+* On every level change: *LOG_Z*
 
 **Ο παραγομενος κώδικας .gcode πρέπει να εχει όσο το δυνατόν λιτότερα Post Processing Scripts.**
 
