@@ -7,9 +7,9 @@ Based on [https://github.com/Travis90x/plr-klipper](https://github.com/Travis90x
 Χρήση / Usage:
 <https://www.youtube.com/watch?v=XvJMC4jv4xA&ab_channel=Travis90x>
 
-Και τα δυο αρχεία ([prl.cfg](prl.cfg) και [prl.sh](prl.sh)) είναι του Travis90x και έχουν τροποποιηθεί μόνο τα μονοπάτια.
+Και τα δυο αρχεία ([plr.cfg](plr.cfg) και [plr.sh](plr.sh)) είναι του Travis90x και έχουν τροποποιηθεί μόνο τα μονοπάτια.
 
-Both files ([prl.cfg](prl.cfg) and [prl.sh](prl.sh)) are from Travis90x and only the paths have been modified.
+Both files ([plr.cfg](plr.cfg) and [plr.sh](plr.sh)) are from Travis90x and only the paths have been modified.
 
 # 1. Εγκατάσταση / Installation
 
@@ -29,10 +29,10 @@ The extension can be downloaded here: [https://github.com/th33xitus/kiauh/blob/m
 a. Copy the plr.sh file to the */home/pi/printer_data/config/scripts/* or */home/pi/klipper_config/scripts* folder (depending on the installation and how it was installed).
 (For convenience, WinSCP or a similar program can be used.)
 
-β. Με την χρήση του προγράμματος putty (ή κάποιο παρόμοιο πρόγραμμα) γίνεται περιήγη στον φάκελο που περιέχει το αρχείο prl.sh. Κατόπιν χρησιμοποιείται η εντολή `sudo chmod +x prl.sh` σε raspberry pi.
+β. Με την χρήση του προγράμματος putty (ή κάποιο παρόμοιο πρόγραμμα) γίνεται περιήγη στον φάκελο που περιέχει το αρχείο plr.sh. Κατόπιν χρησιμοποιείται η εντολή `sudo chmod +x plr.sh` σε raspberry pi.
 (Αν εκτελεστεί σωστά χρειάζεται επιβεβαίωση του κωδικού πρόσβασης του raspberry pi η άλλης συσκευής που χρησιμοποιείται για το klipper.)
 
-b. Using the putty (or a similar program) browse to the folder containing the prl.sh file. Then `sudo chmod +x prl.sh` command is used on raspberry pi.
+b. Using the putty (or a similar program) browse to the folder containing the plr.sh file. Then `sudo chmod +x plr.sh` command is used on raspberry pi.
 (If executed correctly, the raspberry pi password of the other device used for the klipper needs to be confirmed.)
 
 # 3. Προσθήκη στο / Add in printer.cfg
@@ -42,7 +42,7 @@ b. Using the putty (or a similar program) browse to the folder containing the pr
 filename: ~/save_variables.cfg # needed for Power Loss Recovery plr.cfg
 
 # 4. plr.cfg / save_variables.cfg
-![Power Loss Recovery plr.cfg position](prl.cfg__and__save_variables.PNG)
+![Power Loss Recovery plr.cfg position](plr.cfg__and__save_variables.PNG)
 
 ![Variables](save_variables.PNG)
 # 5. CURA Slicer
