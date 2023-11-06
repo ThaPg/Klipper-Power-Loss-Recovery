@@ -35,6 +35,17 @@ a. Copy the plr.sh file to the */home/pi/printer_data/config/scripts/* or */home
 b. Using the putty (or a similar program) browse to the folder containing the plr.sh file. Then `sudo chmod +x plr.sh` command is used on raspberry pi.
 (If executed correctly, the raspberry pi password of the other device used for the klipper needs to be confirmed.)
 
+---
+Σε περίπτωση που τα παραπάνω βήμα (β) δεν μπορεί να εκτελεστεί σωστά, γίνεται χρήση του προγράμματος WinSCP. Μέσω του WinSCP γίνεται αναζήτηση του αρχείου ([plr.sh](plr.sh)).
+In case the above step (b) cannot be performed correctly, the WinSCP program is used. The file ([plr.sh](plr.sh)) is searched through WinSCP.
+
+![File path](WinSCP_file_folder.png)
+
+Κατόπιν με δεξί κλικ βρίσκουμε το Properties και στην συνέχεια αλλάζουμε τα Permissions όπως φαίνονται στην εικόνα.
+Then with a right click we find Properties and then change the Permissions as shown in the image.
+![File properties](WinSCP_file_proprerties.png)
+
+
 # 3. Προσθήκη στο / Add in printer.cfg
 
 [save_variables]
@@ -52,12 +63,9 @@ filename: ~/save_variables.cfg # needed for Power Loss Recovery plr.cfg
 2. Προσθήκη στην πρώτη γραμμή του end gcode: *clear_last_file*
 3. Σε κάθε αλλαγή επιπέδου: *LOG_Z*
 
-**Ο παραγομενος κώδικας .gcode πρέπει να εχει όσο το δυνατόν λιτότερα Post Processing Scripts.**
-
 ### It is recommended to use only the CURA slicer for compatibility reasons.
 1. Add to last line of start gcode: *save_last_file*
 2. Add to first line of end gcode: *clear_last_file*
 3. On every level change: *LOG_Z*
 
-**Generated .gcode should have as few Post Processing Scripts as possible.**
-
+![Layer change](Insert_at_layer_change.PNG)
