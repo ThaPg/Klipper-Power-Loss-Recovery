@@ -37,11 +37,13 @@ b. Using the putty (or a similar program) browse to the folder containing the pl
 
 ---
 Σε περίπτωση που τα παραπάνω βήμα (β) δεν μπορεί να εκτελεστεί σωστά, γίνεται χρήση του προγράμματος WinSCP. Μέσω του WinSCP γίνεται αναζήτηση του αρχείου ([plr.sh](plr.sh)).
+
 In case the above step (b) cannot be performed correctly, the WinSCP program is used. The file ([plr.sh](plr.sh)) is searched through WinSCP.
 
 ![File path](WinSCP_file_folder.png)
 
 Κατόπιν με δεξί κλικ βρίσκουμε το Properties και στην συνέχεια αλλάζουμε τα Permissions όπως φαίνονται στην εικόνα.
+
 Then with a right click we find Properties and then change the Permissions as shown in the image.
 ![File properties](WinSCP_file_proprerties.png)
 
